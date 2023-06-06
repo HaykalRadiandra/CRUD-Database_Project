@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body {
+    box-sizing: border-box;
+    background: #1f1b32;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(parrot.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 550px;
+    height: 650px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    transition: .5s;
+}
+
+.form-box:hover{
+    box-shadow: inset 0 0 5px 3px #888;
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    /* width: 380px; */
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    /* font-weight: 600; */
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox select {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox select option{
+    background: transparent;
+    color: black;
+}
+
+.kirim{
+    gap: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.kirim input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.kirim input:hover{
+    box-shadow: inset 0 0 15px 3px #888;
+    background: rgb(218, 231, 241);
+}
